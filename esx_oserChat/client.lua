@@ -38,7 +38,6 @@ RegisterNetEvent('esx_oserChat:entornoSend')
 AddEventHandler('esx_oserChat:entornoSend', function(messageFull)
     if PlayerData.job.name == 'police' then
     	--sonido de advertencia
-		TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'alert', 0.9)
 		TriggerEvent('chat:addMessage', messageFull)
     end
 end)
@@ -95,7 +94,6 @@ RegisterNetEvent('esx_oserChat:1020Send')
 AddEventHandler('esx_oserChat:1020Send', function(messageFull)
     if PlayerData.job.name == 'police' then
     	--sonido de advertencia
-		TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'alert', 0.9)
 		TriggerEvent('chat:addMessage', messageFull)
     end
 end)
