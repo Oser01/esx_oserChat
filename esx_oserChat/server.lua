@@ -31,7 +31,6 @@ AddEventHandler('esx_oserChat:entorno', function(targetCoords, msg, streetName, 
 		args = {entornoContador, streetName, msg}
 	}
 	TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = 'Mensaje enviado' })
-	TriggerClientEvent('esx_oserChat:entornoMarker', -1, targetCoords, emergency, entornoMarcador)
     TriggerClientEvent('esx_oserChat:entornoSend', -1, messageFull)
 end)
 
